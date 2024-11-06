@@ -1,0 +1,102 @@
+.top_panel__wrapper {
+  width: 100%;
+  background-color: var(--background-color-black);
+
+  .top_panel__inner {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .logo {
+      &__rks-vpn {
+        background-image: url('./../../../images/rks_vpn_logo.svg');
+        background-size: contain;
+        width: 123px;
+        height: 19px;
+        background-repeat: no-repeat;
+        margin: 0;
+        margin-right: auto;
+        display: block;
+        order: 0;
+
+        &:hover {
+          cursor: pointer;
+          transition: all .5s;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .top_panel__menu {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 120%;
+      color: var(--font-white);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+
+      &.menu-general {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        order: 2;
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      &.menu-lang {
+        margin-left: 30px;
+        order: 1;
+
+      }
+
+      &-item {
+        color: var(--font-white);
+
+        &:hover {
+          cursor: pointer;
+          transition: all .5s;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:640px) {
+  .top_panel__wrapper {
+    .top_panel__inner {
+      padding: 20px 40px;
+      flex-wrap: nowrap;
+
+      .top_panel__menu {
+        font-size: 14px;
+
+        &.menu-general {
+          order: 1;
+          width: auto;
+          margin-top: 0;
+        }
+
+        &.menu-lang {
+          margin-left: 30px;
+          order: 2;
+
+        }
+
+      }
+
+      .logo {
+        width: 164px;
+        height: 26px;
+      }
+    }
+  }
+}
+
+@media (min-width:1280px) {}

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Vela Sans';
+  src: url('./../fonts/VelaSans-GX.ttf');
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./../fonts/Unbounded-VariableFont_wght.ttf');
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Vela Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--font-white);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+
+
+
+  #root {
+    height: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .wrapper {
+      min-height: 100vh;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+@media (min-width: 960px) {
+  body {
+    font-size: 25px;
+  }
+}

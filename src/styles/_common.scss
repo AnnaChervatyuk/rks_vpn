@@ -1,0 +1,35 @@
+// CSS variables, shared between all themes
+
+:root {
+  --background-color-white: #FFFFFF;
+  --background-color-black: #010101;
+  --background-color-grey: #edefef;
+  --background-color-blue: #0007FF;
+
+  --global-white: #fff;
+
+  --max-width-desktop: 1280px;
+
+  --font-white: #FFFFFF;
+  --font-link: #4d51ff;
+  --font-black: #000;
+  --font-grey: #595959;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+  -webkit-appearance: none;
+
+  &-thumb {
+    border-radius: 3px;
+  }
+
+  &-track {
+    background: transparent;
+  }
+
+  &-thumb {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
