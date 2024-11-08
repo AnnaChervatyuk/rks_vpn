@@ -1,15 +1,19 @@
-import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
 import { dictRU } from './../../../dict/ru';
 import { dictEN } from './../../../dict/en';
+import { LangStore } from '../../../stores/';
 import './TopPanel.scss';
+import { useCallback } from 'react';
+import { observer } from 'mobx-react';
 
-const TopPanel = () => {
-  const menuList = window.user_lang === 'ru_RU' ? dictRU.navigationMenu : dictEN.navigationMenu;
+const TopPanel = observer(() => {
+  const { user_lang } = LangStore;
+  const menuList = user_lang === 'ru_RU' ? dictRU.navigationMenu : dictEN.navigationMenu;
 
-  const changLang = () => {
-    window.user_lang = window.user_lang === 'ru_RU' ? (window.user_lang = 'en_EN') : (window.user_lang = 'ru_RU');
-  };
+  const changLang = useCallback(() => {
+    let lang = user_lang === 'ru_RU' ? 'en_EN' : 'ru_RU';
+    LangStore.user_lang = lang;
+    localStorage.setItem('user_lang', lang);
+  }, [user_lang]);
 
   return (
     <div className="top_panel__wrapper">
@@ -41,6 +45,6 @@ const TopPanel = () => {
       <hr className="separator" />
     </div>
   );
-};
+});
 
 export default TopPanel;

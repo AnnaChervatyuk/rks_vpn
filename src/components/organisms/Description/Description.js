@@ -1,11 +1,13 @@
+import xray from './../../../images/xray.png';
 import './Description.scss';
 
 const Description = () => {
   return (
     <div className="description__wrapper">
       <div className="description__inner">
+        <img src={xray} width="500" height="500" alt="" />
         <h2>Создан на основе современного протокола Xray, который сложно заблокировать</h2>
-        <div div className="description__content">
+        <div div className="description__inner-content">
           <p>
             Xray предоставляет большие возможности для обеспечения конфиденциальности, обхода интернет-цензуры и защиты
             ваших данных в интернете.

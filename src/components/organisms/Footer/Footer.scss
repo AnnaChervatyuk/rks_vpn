@@ -8,15 +8,22 @@
 
   .footer__inner {
     padding: 40px 60px;
+    padding: 30px 16px;
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+
+  img {
+    width: auto;
+    height: auto;
+    margin-bottom: 50px;
   }
 
   .footer__contacts {
@@ -37,6 +44,21 @@
     div:first-child:after {
       content: '•';
       padding: 0 5px;
+    }
+  }
+}
+
+@media (min-width:640px) {
+  .footer__wrapper {
+
+
+    .footer__inner {
+      padding: 40px 60px;
+      flex-direction: row;
+
+      img {
+        margin: 0;
+      }
     }
   }
 }

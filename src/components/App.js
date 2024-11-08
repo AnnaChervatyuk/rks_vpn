@@ -1,8 +1,10 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import MainPage from './MainPage/MainPage';
+import { LangStore } from '../stores/';
 
 const App = () => {
+  LangStore.init();
   return (
     <div className="wrapper" id="wrapper">
       <>

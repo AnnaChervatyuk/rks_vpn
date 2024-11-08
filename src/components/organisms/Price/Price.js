@@ -37,7 +37,7 @@ const Price = () => {
               </p>
             </div>
           </div>
-          <ButtonLink text={'Купить'} externalURL="https://vpnpay.io/ru/rks/" color={'blue'} />
+          <ButtonLink text={'Купить'} url="https://vpnpay.io/ru/rks/" color={'blue'} />
           <div className="price__content-button-descr">
             Вы будете перенаправлены на сайт VPNPAY для оплаты. К оплате принимаются карты российских и зарубежных
             банков, криптовалюта
