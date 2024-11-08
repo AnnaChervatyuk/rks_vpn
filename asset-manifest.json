@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rks_vpn/static/css/main.0db915a9.css",
-    "main.js": "/rks_vpn/static/js/main.7b721c4d.js",
+    "main.css": "/rks_vpn/static/css/main.50c12f46.css",
+    "main.js": "/rks_vpn/static/js/main.47dbcbce.js",
     "static/media/Unbounded-VariableFont_wght.ttf": "/rks_vpn/static/media/Unbounded-VariableFont_wght.0314441af1ebbb9eb2ee.ttf",
     "static/media/server.svg": "/rks_vpn/static/media/server.f847f8a4f5a9f1a1207d0d12d252f1d3.svg",
     "static/media/amnezia_app.png": "/rks_vpn/static/media/amnezia_app.68c56e80858fe6fb2b4c.png",
@@ -21,11 +21,11 @@
     "static/media/limit.svg": "/rks_vpn/static/media/limit.34533f38d24cb53646134fe3b3e9c054.svg",
     "static/media/mastercard.svg": "/rks_vpn/static/media/mastercard.f6b3fa4798ab29b2ccbf4d4dcb2bc003.svg",
     "index.html": "/rks_vpn/index.html",
-    "main.0db915a9.css.map": "/rks_vpn/static/css/main.0db915a9.css.map",
-    "main.7b721c4d.js.map": "/rks_vpn/static/js/main.7b721c4d.js.map"
+    "main.50c12f46.css.map": "/rks_vpn/static/css/main.50c12f46.css.map",
+    "main.47dbcbce.js.map": "/rks_vpn/static/js/main.47dbcbce.js.map"
   },
   "entrypoints": [
-    "static/css/main.0db915a9.css",
-    "static/js/main.7b721c4d.js"
+    "static/css/main.50c12f46.css",
+    "static/js/main.47dbcbce.js"
   ]
 }
