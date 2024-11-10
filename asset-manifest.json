@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/rks_vpn/static/css/main.50c12f46.css",
-    "main.js": "/rks_vpn/static/js/main.47dbcbce.js",
+    "main.css": "/rks_vpn/static/css/main.ce257286.css",
+    "main.js": "/rks_vpn/static/js/main.61d4ff4f.js",
     "static/media/Unbounded-VariableFont_wght.ttf": "/rks_vpn/static/media/Unbounded-VariableFont_wght.0314441af1ebbb9eb2ee.ttf",
     "static/media/server.svg": "/rks_vpn/static/media/server.f847f8a4f5a9f1a1207d0d12d252f1d3.svg",
     "static/media/amnezia_app.png": "/rks_vpn/static/media/amnezia_app.68c56e80858fe6fb2b4c.png",
@@ -17,15 +17,15 @@
     "static/media/mir.svg": "/rks_vpn/static/media/mir.f94b60c1dcbd17828e21b2fb21e82d59.svg",
     "static/media/visa.svg": "/rks_vpn/static/media/visa.b7dba550e1d5561cbfba20bfc67c29b0.svg",
     "static/media/bitcoin.svg": "/rks_vpn/static/media/bitcoin.993ec33ff1b4ebc4ffe00b910c56e651.svg",
+    "index.html": "/rks_vpn/index.html",
     "static/media/sbp.svg": "/rks_vpn/static/media/sbp.95e063eb41a455160520daabc92239b2.svg",
     "static/media/limit.svg": "/rks_vpn/static/media/limit.34533f38d24cb53646134fe3b3e9c054.svg",
     "static/media/mastercard.svg": "/rks_vpn/static/media/mastercard.f6b3fa4798ab29b2ccbf4d4dcb2bc003.svg",
-    "index.html": "/rks_vpn/index.html",
-    "main.50c12f46.css.map": "/rks_vpn/static/css/main.50c12f46.css.map",
-    "main.47dbcbce.js.map": "/rks_vpn/static/js/main.47dbcbce.js.map"
+    "main.ce257286.css.map": "/rks_vpn/static/css/main.ce257286.css.map",
+    "main.61d4ff4f.js.map": "/rks_vpn/static/js/main.61d4ff4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.50c12f46.css",
-    "static/js/main.47dbcbce.js"
+    "static/css/main.ce257286.css",
+    "static/js/main.61d4ff4f.js"
   ]
 }
