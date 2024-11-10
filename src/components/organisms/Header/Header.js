@@ -1,21 +1,19 @@
 import { ButtonLink } from '../../atoms';
-
 import './Header.scss';
+import parse from 'html-react-parser';
 
-const Header = () => {
+const Header = ({ header, btnBuyBlock }) => {
   return (
     <div className="header__wrapper">
       <div className="header__inner">
-        <h1>Устойчивый к&nbsp;блокировкам VPN</h1>
+        <h1>{parse(header.header)}</h1>
         <div className="header__content">
-          <div>
-            VPN от технических специалистов <a href="https://rks.global/">RKS.Global</a>
-          </div>
+          <div>{parse(header.text)}</div>
           <div className="header__content__buy">
-            <ButtonLink url="https://vpnpay.io/ru/rks/" text={'Купить'} color={'white'} />
+            <ButtonLink url={btnBuyBlock.btnBuy.link} text={btnBuyBlock.btnBuy.text} color={'white'} />
             <div className="header__content__buy-text">
-              <div className="header__content__buy-text-price">от 250 ₽ в месяц</div>
-              <div className="header__content__buy-text-descr">при оплате на год</div>
+              <div className="header__content__buy-text-price">{parse(btnBuyBlock.textPeriod)}</div>
+              <div className="header__content__buy-text-descr">{parse(btnBuyBlock.textDescr)}</div>
             </div>
           </div>
         </div>

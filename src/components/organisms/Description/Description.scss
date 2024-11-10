@@ -58,6 +58,10 @@
       padding: 80px 40px;
       gap: 30px;
 
+      &-content {
+        font-size: 20px;
+      }
+
       h2 {
         margin-bottom: 0;
       }
@@ -106,6 +110,7 @@
         border-left: 1px solid #00000022;
         padding-left: 30px;
         margin-bottom: 180px;
+        font-size: 25px;
 
         p {
           margin-bottom: 30px;

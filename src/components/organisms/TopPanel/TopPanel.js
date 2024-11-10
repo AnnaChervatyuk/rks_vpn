@@ -1,14 +1,9 @@
-import { dictRU } from './../../../dict/ru';
-import { dictEN } from './../../../dict/en';
-import { LangStore } from '../../../stores/';
 import './TopPanel.scss';
 import { useCallback } from 'react';
 import { observer } from 'mobx-react';
+import { LangStore } from '../../../stores/';
 
-const TopPanel = observer(() => {
-  const { user_lang } = LangStore;
-  const menuList = user_lang === 'ru_RU' ? dictRU.navigationMenu : dictEN.navigationMenu;
-
+const TopPanel = observer(({ menuList, user_lang }) => {
   const changLang = useCallback(() => {
     let lang = user_lang === 'ru_RU' ? 'en_EN' : 'ru_RU';
     LangStore.user_lang = lang;
@@ -18,7 +13,14 @@ const TopPanel = observer(() => {
   return (
     <div className="top_panel__wrapper">
       <div className="top_panel__inner inner">
-        <div className="logo logo__rks-vpn"></div>
+        <div
+          className="logo logo__rks-vpn"
+          onClick={() =>
+            document.getElementById('top').scrollIntoView({
+              behavior: 'smooth'
+            })
+          }
+        ></div>
         <div className="top_panel__menu menu-general">
           {menuList
             .filter((node) => node.link !== 'lang')

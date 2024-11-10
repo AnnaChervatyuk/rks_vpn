@@ -1,22 +1,17 @@
 import xray from './../../../images/xray.png';
 import './Description.scss';
+import parse from 'html-react-parser';
 
-const Description = () => {
+const Description = ({ descriptionBlock }) => {
   return (
     <div className="description__wrapper">
       <div className="description__inner">
         <img src={xray} width="500" height="500" alt="" />
-        <h2>Создан на основе современного протокола Xray, который сложно заблокировать</h2>
+        <h2>{parse(descriptionBlock.header)}</h2>
         <div div className="description__inner-content">
-          <p>
-            Xray предоставляет большие возможности для обеспечения конфиденциальности, обхода интернет-цензуры и защиты
-            ваших данных в интернете.
-          </p>
+          <p>{parse(descriptionBlock.text1)}</p>
 
-          <p>
-            Использует TLS (Transport Layer Security) и маскировку VPN-трафика под обычные HTTPS-соединения. Работает на
-            всех платформах: Windows, macOS, Linux, Android и iOS.
-          </p>
+          <p>{parse(descriptionBlock.text2)}</p>
         </div>
       </div>
     </div>
